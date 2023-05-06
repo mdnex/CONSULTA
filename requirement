@@ -1,0 +1,6 @@
+Django==2.2.4
+transformers
+torch
+accelerate
+bitsandbytes
+deep-translator
