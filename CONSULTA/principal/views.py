@@ -9,12 +9,12 @@ import torch
 import time
 
 model = AutoModelForCausalLM.from_pretrained(
-    "databricks/dolly-v2-12b",
+    "databricks/dolly-v2-3b",
     device_map="auto",
     torch_dtype=torch.float16,
     load_in_8bit=True)
 
-tokenizer = AutoTokenizer.from_pretrained("databricks/dolly-v2-12b")
+tokenizer = AutoTokenizer.from_pretrained("databricks/dolly-v2-3b")
 
 def prompt(s):
     global tokenizer
